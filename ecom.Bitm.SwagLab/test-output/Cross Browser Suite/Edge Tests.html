@@ -1,0 +1,251 @@
+<html>
+<head>
+<title>TestNG:  Edge Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 09 13:13:21 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>81 seconds (81540 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='swagLabHomePage.HomePage_Testcase.login()'><b>login</b><br>Test class: swagLabHomePage.HomePage_Testcase<br/>
+<a href="#Output-1630192523" onClick='toggleBox("Output-1630192523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1630192523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1630192523">
+Login successful<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>swagLabHomePage.HomePage_Testcase@3cce5371</td></tr>
+<tr>
+<td title='SwagLabProduct.Product_Testcase.login()'><b>login</b><br>Test class: SwagLabProduct.Product_Testcase</td>
+<td></td>
+<td>0</td>
+<td>SwagLabProduct.Product_Testcase@17bffc17</td></tr>
+<tr>
+<td title='SwagLabCheckout.CheckOut_testcase.checkoutTest2()'><b>checkoutTest2</b><br>Test class: SwagLabCheckout.CheckOut_testcase<br/>
+<a href="#Output-1100254227" onClick='toggleBox("Output-1100254227", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1100254227" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1100254227">
+Login successful<br/>
+Bike Light added to cart<br/>
+Cart opened<br/>
+Checkout page opened<br/>
+Checkout information page loaded<br/>
+Last Name and Postal Code entered<br/>
+Continue button clicked<br/>
+Checkout Test 2 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>SwagLabCheckout.CheckOut_testcase@6e535154</td></tr>
+<tr>
+<td title='SwagLabCheckout.CheckOut_testcase.login()'><b>login</b><br>Test class: SwagLabCheckout.CheckOut_testcase<br/>
+<a href="#Output-98717829" onClick='toggleBox("Output-98717829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-98717829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-98717829">
+Login successful<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>SwagLabCheckout.CheckOut_testcase@6e535154</td></tr>
+<tr>
+<td title='swagLabHomePage.HomePage_Testcase.verifyLogout()'><b>verifyLogout</b><br>Test class: swagLabHomePage.HomePage_Testcase<br/>
+<a href="#Output-1306613962" onClick='toggleBox("Output-1306613962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1306613962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1306613962">
+Login successful<br/>
+Logout verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>swagLabHomePage.HomePage_Testcase@3cce5371</td></tr>
+<tr>
+<td title='SwagLabLogin.Login_Testcase.validLogin()'><b>validLogin</b><br>Test class: SwagLabLogin.Login_Testcase<br/>
+<a href="#Output-919045066" onClick='toggleBox("Output-919045066", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-919045066" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-919045066">
+Valid login successful<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>SwagLabLogin.Login_Testcase@3ad83a66</td></tr>
+<tr>
+<td title='swagLabHomePage.HomePage_Testcase.verifyHomePage()'><b>verifyHomePage</b><br>Test class: swagLabHomePage.HomePage_Testcase<br/>
+<a href="#Output-322391206" onClick='toggleBox("Output-322391206", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-322391206" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-322391206">
+Login successful<br/>
+Home page verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>swagLabHomePage.HomePage_Testcase@3cce5371</td></tr>
+<tr>
+<td title='SwagLabCheckout.CheckOut_testcase.checkoutTest1()'><b>checkoutTest1</b><br>Test class: SwagLabCheckout.CheckOut_testcase<br/>
+<a href="#Output-683049063" onClick='toggleBox("Output-683049063", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-683049063" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-683049063">
+Login successful<br/>
+Backpack added to cart<br/>
+Cart opened<br/>
+Checkout page opened<br/>
+Checkout information page loaded<br/>
+All customer details entered<br/>
+Continue button clicked<br/>
+Checkout Overview verified<br/>
+Finish button clicked<br/>
+Checkout Test 1 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>SwagLabCheckout.CheckOut_testcase@6e535154</td></tr>
+<tr>
+<td title='SwagLabLogin.Login_Testcase.invalidLogin()'><b>invalidLogin</b><br>Test class: SwagLabLogin.Login_Testcase<br/>
+<a href="#Output-1471278212" onClick='toggleBox("Output-1471278212", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1471278212" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1471278212">
+Error Message: Epic sadface: Username and password do not match any user in this service<br/>
+Invalid login verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>SwagLabLogin.Login_Testcase@3ad83a66</td></tr>
+<tr>
+<td title='SwagLabProduct.Product_Testcase.sortProducts()'><b>sortProducts</b><br>Test class: SwagLabProduct.Product_Testcase<br/>
+<a href="#Output-1162154803" onClick='toggleBox("Output-1162154803", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1162154803" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1162154803">
+Name A-Z sorting completed<br/>
+Name Z-A sorting completed<br/>
+Price Low to High sorting completed<br/>
+Price High to Low sorting completed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>SwagLabProduct.Product_Testcase@17bffc17</td></tr>
+<tr>
+<td title='swagLabHomePage.HomePage_Testcase.verifyAllItemsMenu()'><b>verifyAllItemsMenu</b><br>Test class: swagLabHomePage.HomePage_Testcase<br/>
+<a href="#Output-282658241" onClick='toggleBox("Output-282658241", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-282658241" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-282658241">
+Login successful<br/>
+All Items menu verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>swagLabHomePage.HomePage_Testcase@3cce5371</td></tr>
+<tr>
+<td title='SwagLabProduct.Product_Testcase.verifyProductPage()'><b>verifyProductPage</b><br>Test class: SwagLabProduct.Product_Testcase</td>
+<td></td>
+<td>0</td>
+<td>SwagLabProduct.Product_Testcase@17bffc17</td></tr>
+<tr>
+<td title='SwagLabCheckout.CheckOut_testcase.checkoutTest3()'><b>checkoutTest3</b><br>Test class: SwagLabCheckout.CheckOut_testcase<br/>
+<a href="#Output-823415723" onClick='toggleBox("Output-823415723", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-823415723" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-823415723">
+Login successful<br/>
+Bolt T-Shirt added to cart<br/>
+Cart opened<br/>
+Checkout page opened<br/>
+Checkout information page loaded<br/>
+Continue button clicked<br/>
+Checkout Test 3 Passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>SwagLabCheckout.CheckOut_testcase@6e535154</td></tr>
+</table><p>
+</body>
+</html>

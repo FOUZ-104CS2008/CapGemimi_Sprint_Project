@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Excel Driven Suite]">
+  <test thread-count="5" name="Excel Driven Tests(failed)">
+    <classes>
+      <class name="ExcelDriven.ExcelDrivenTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="executeTestCase" invocation-numbers="16 4 10 11 14 15"/>
+        </methods>
+      </class> <!-- ExcelDriven.ExcelDrivenTest -->
+    </classes>
+  </test> <!-- Excel Driven Tests(failed) -->
+</suite> <!-- Failed suite [Excel Driven Suite] -->

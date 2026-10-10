@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Batch Suite]">
+  <test thread-count="5" name="All Tests(failed)">
+    <classes>
+      <class name="SwagLabCheckout.CheckOut_testcase">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="checkoutTest1"/>
+        </methods>
+      </class> <!-- SwagLabCheckout.CheckOut_testcase -->
+    </classes>
+  </test> <!-- All Tests(failed) -->
+</suite> <!-- Failed suite [Batch Suite] -->

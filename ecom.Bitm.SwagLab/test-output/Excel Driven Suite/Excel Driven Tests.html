@@ -1,0 +1,523 @@
+<html>
+<head>
+<title>TestNG:  Excel Driven Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Excel Driven Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 08 20:39:10 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>191 seconds (191178 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID28, Checkout Page, Functional, Verify that the user can enter valid checkout information, Product is available in Cart, 1. Click Checkout
+2. Enter First Name
+3. Enter Last Name
+4. Enter Postal Code
+5. Click Continue, fouziya / b / 583012, User should proceed to Checkout Overview page, </td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4131}, goog:processID: 30604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4131/devtool..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 105b4eafcf1a0ef953b70df5d8a9ccd9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForUrl(ExcelDrivenTest.java:521)
+	at ExcelDriven.ExcelDrivenTest.verifyCheckoutInformation(ExcelDrivenTest.java:294)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2135077268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2135077268'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:4131}, goog:processID: 30604, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:4131/devtool..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 105b4eafcf1a0ef953b70df5d8a9ccd9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForUrl(ExcelDrivenTest.java:521)
+	at ExcelDriven.ExcelDrivenTest.verifyCheckoutInformation(ExcelDrivenTest.java:294)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:105)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>21</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID29, Checkout Page, Functional, Verify that the user can complete the purchase with valid information, Product is available in Cart, 1. Open Cart
+2. Click Checkout
+3. Enter customer details
+4. Click Continue
+5. Click Finish, fouziya / b / 583012 + Sauce Labs Backpack, Purchase should be completed successfully, </td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1836}, goog:processID: 24976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1836/devtool..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54cc218d26e15d846bd14894192f9b44
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForUrl(ExcelDrivenTest.java:521)
+	at ExcelDriven.ExcelDrivenTest.verifyCompletePurchase(ExcelDrivenTest.java:330)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace422266669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace422266669'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1836}, goog:processID: 24976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1836/devtool..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54cc218d26e15d846bd14894192f9b44
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForUrl(ExcelDrivenTest.java:521)
+	at ExcelDriven.ExcelDrivenTest.verifyCompletePurchase(ExcelDrivenTest.java:330)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:109)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>21</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID36, Checkout Page, Negative, Verify that checkout cannot proceed when First Name is left blank, Product is available in Cart, 1. Open Cart
+2. Click Checkout
+3. Leave First Name blank
+4. Enter Last Name and Postal Code
+5. Click Continue, First Name: Blank / Last Name: b / Postal Code: 583012, User should not proceed and an appropriate validation message should be displayed, </td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: [data-test=&apos;error&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test=&apos;error&apos;]&quot;}.
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55257}, goog:processID: 21304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55257/devtoo..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c59070016f8611cc1c58f1967830191
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForError(ExcelDrivenTest.java:533)
+	at ExcelDriven.ExcelDrivenTest.verifyFirstNameBlank(ExcelDrivenTest.java:426)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1556173561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1556173561'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: [data-test=&apos;error&apos;], but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test=&apos;error&apos;]&quot;}.
+(tried for 15 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55257}, goog:processID: 21304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55257/devtoo..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c59070016f8611cc1c58f1967830191
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForError(ExcelDrivenTest.java:533)
+	at ExcelDriven.ExcelDrivenTest.verifyFirstNameBlank(ExcelDrivenTest.java:426)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>16</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID10, Home Page, System, Verify that the user can logout from the application, User is logged in, 1. Login
+2. Open hamburger menu
+3. Click Logout, standard_user / secret_sauce, User should be logged out and Login page should be displayed, </td>
+<td><div><pre>java.lang.AssertionError: Logout was not successful expected [https://www.saucedemo.com/] but found [https://www.saucedemo.com/inventory.html]
+	at ExcelDriven.ExcelDrivenTest.verifyLogout(ExcelDrivenTest.java:242)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1589640004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589640004'><pre>java.lang.AssertionError: Logout was not successful expected [https://www.saucedemo.com/] but found [https://www.saucedemo.com/inventory.html]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at ExcelDriven.ExcelDrivenTest.verifyLogout(ExcelDrivenTest.java:242)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID33, Checkout Page, System, Verify complete end-to-end purchase flow from Login to Order Confirmation, Application is accessible, 1. Login
+2. Add product
+3. Open Cart
+4. Checkout
+5. Enter customer details
+6. Continue
+7. Finish, standard_user / secret_sauce + fouziya / b / 583012 + Sauce Labs Backpack, User should successfully complete the purchase journey, </td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:23823}, goog:processID: 28804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:23823/devtoo..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82bfb8766e44b7b302dac05436d71727
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForUrl(ExcelDrivenTest.java:521)
+	at ExcelDriven.ExcelDrivenTest.verifyEndToEndPurchase(ExcelDrivenTest.java:393)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:125)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace528469698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace528469698'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:23823}, goog:processID: 28804, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:23823/devtoo..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 82bfb8766e44b7b302dac05436d71727
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForUrl(ExcelDrivenTest.java:521)
+	at ExcelDriven.ExcelDrivenTest.verifyEndToEndPurchase(ExcelDrivenTest.java:393)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:125)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>21</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID32, Checkout Page, System, Verify that the user can complete the purchase successfully, User is logged in and product is added to Cart, 1. Open Cart
+2. Click Checkout
+3. Enter customer information
+4. Continue
+5. Finish, fouziya / b / 583012, Purchase should be completed and confirmation message should be displayed, </td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:11417}, goog:processID: 8620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11417/devtoo..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd0af769cbb41ef0cd9a9ce883d6cf85
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForUrl(ExcelDrivenTest.java:521)
+	at ExcelDriven.ExcelDrivenTest.verifyCompletePurchase(ExcelDrivenTest.java:330)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:121)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1813184924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1813184924'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to be &quot;https://www.saucedemo.com/checkout-step-two.html&quot;. Current url: &quot;https://www.saucedemo.com/checkout-step-one.html&quot;
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.98, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\bfouz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:11417}, goog:processID: 8620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11417/devtoo..., se:cdpVersion: 154.0.8037.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dd0af769cbb41ef0cd9a9ce883d6cf85
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at ExcelDriven.ExcelDrivenTest.waitForUrl(ExcelDrivenTest.java:521)
+	at ExcelDriven.ExcelDrivenTest.verifyCompletePurchase(ExcelDrivenTest.java:330)
+	at ExcelDriven.ExcelDrivenTest.executeTestCase(ExcelDrivenTest.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>21</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID17, Product Page, Functional, Verify that products can be sorted by Price low to high, User is logged in and Products page is displayed, 1. Open Sort dropdown
+2. Select Price low to high, Sort: Price low to high, Products should be displayed in ascending order of price, </td>
+<td></td>
+<td>0</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID18, Product Page, Functional, Verify that products can be sorted by Price high to low, User is logged in and Products page is displayed, 1. Open Sort dropdown
+2. Select Price high to low, Sort: Price high to low, Products should be displayed in descending order of price, </td>
+<td></td>
+<td>0</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID31, Checkout Page, Integration, Verify integration between Checkout Overview and Order Confirmation, User is on Checkout Overview page, 1. Verify Checkout Overview
+2. Click Finish, Sauce Labs Backpack, Order Confirmation page should be displayed, </td>
+<td></td>
+<td>1</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID37, Checkout Page, Negative, Verify that checkout cannot proceed when all mandatory fields are blank, Product is available in Cart, 1. Open Cart
+2. Click Checkout
+3. Leave all fields blank
+4. Click Continue, First Name: Blank / Last Name: Blank / Postal Code: Blank, User should not proceed and First Name is required validation should be displayed, </td>
+<td></td>
+<td>0</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID15, Product Page, Functional, Verify that products can be sorted by Name A-Z, User is logged in and Products page is displayed, 1. Open Sort dropdown
+2. Select Name A-Z, Sort: Name A-Z, Products should be displayed in alphabetical ascending order, </td>
+<td></td>
+<td>0</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID30, Checkout Page, Integration, Verify integration between Cart and Checkout Information page, Product is available in Cart, 1. Open Cart
+2. Click Checkout
+3. Enter valid customer details
+4. Click Continue, Sauce Labs Backpack + fouziya / b / 583012, User should proceed to Checkout Overview, </td>
+<td></td>
+<td>1</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID16, Product Page, Functional, Verify that products can be sorted by Name Z-A, User is logged in and Products page is displayed, 1. Open Sort dropdown
+2. Select Name Z-A, Sort: Name Z-A, Products should be displayed in alphabetical descending order, </td>
+<td></td>
+<td>0</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID12, Product Page, Functional, Verify that all available products are displayed on the Products page, User is logged in, 1. Navigate to Products page
+2. Observe product list, standard_user / secret_sauce, Products should be displayed with product name, image, price and Add to Cart option, </td>
+<td></td>
+<td>0</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID01, Login, Functional, Verify that the user is able to login with valid credentials, User is on SauceDemo Login page, 1. Open SauceDemo
+2. Enter username
+3. Enter password
+4. Click Login, standard_user / secret_sauce, User should be successfully logged in and redirected to the Products page, </td>
+<td></td>
+<td>0</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID07, Home Page, Functional, Verify that the Home/Products page is displayed after successful login, User has valid credentials, 1. Open SauceDemo
+2. Login with valid credentials
+3. Observe page, standard_user / secret_sauce, Products page should be displayed successfully, </td>
+<td></td>
+<td>0</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID02, Login, Negative, Verify that an error message is displayed when invalid login credentials are entered, User is on SauceDemo Login page, 1. Enter invalid username
+2. Enter invalid password
+3. Click Login, wrong_user / wrong_password, User should not be logged in and an appropriate error message should be displayed, </td>
+<td></td>
+<td>0</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+<tr>
+<td title='ExcelDriven.ExcelDrivenTest.executeTestCase()'><b>executeTestCase</b><br>Test class: ExcelDriven.ExcelDrivenTest<br>Parameters: TC_ID08, Home Page, Functional, Verify that the All Items option is available in the menu, User is logged in, 1. Login
+2. Click hamburger menu
+3. Observe All Items option, standard_user / secret_sauce, All Items option should be displayed, </td>
+<td></td>
+<td>1</td>
+<td>ExcelDriven.ExcelDrivenTest@7ef82753</td></tr>
+</table><p>
+</body>
+</html>
