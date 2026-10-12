@@ -1,4 +1,4 @@
-
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -17,12 +17,14 @@
     </properties>
 
     <dependencies>
+        <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.46.0</version>
         </dependency>
 
+        <!-- TestNG: declare only once -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -30,12 +32,14 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Excel file handling -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>5.4.1</version>
         </dependency>
 
+        <!-- Logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
@@ -60,6 +64,7 @@
     </build>
 
     <profiles>
+        <!-- Functional Testing -->
         <profile>
             <id>FT</id>
             <build>
@@ -77,6 +82,7 @@
             </build>
         </profile>
 
+        <!-- System Testing -->
         <profile>
             <id>YT</id>
             <build>
@@ -94,6 +100,7 @@
             </build>
         </profile>
 
+        <!-- Smoke Testing -->
         <profile>
             <id>ST</id>
             <build>
@@ -111,6 +118,7 @@
             </build>
         </profile>
 
+        <!-- Integration Testing -->
         <profile>
             <id>IT</id>
             <build>
@@ -130,4 +138,4 @@
     </profiles>
 
 </project>
-
+```
