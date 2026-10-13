@@ -119,7 +119,7 @@
                         <artifactId>maven-surefire-plugin</artifactId>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>Ingration.xml</suiteXmlFile>
+                                <suiteXmlFile>Ingeration.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
